@@ -8,13 +8,13 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <!-- Some comment -->
-        <!-- Some sample code Vitalii Start -->
         <header id="home">
              <nav>
                 <div class="logo">
-                    <img src="img/logo.svg" alt="logo">
+                    Stickerz
                 </div>
+                <label class="burger-icon" for="burger-checkbox">☰</label>
+                <input type="checkbox" id="burger-checkbox">
                 <div class="menu">
                     <a href="#home">Home</a>
                     <a href="#products">Products</a>
@@ -22,15 +22,11 @@
                     <a href="cart.html">Cart</a>
                 </div> 
              </nav> 
-             <section>
-                 <h1>Welcome to <br>Stickerz!</h1>
-                 <p class="subheading">Best sticker shop in the World!</p>
-                 <hr>
-                 <p class="discount-notice">Buy with discount today</p>
+             <section class="banner">
+                 <h1>Stickerz!</h1>
                  <a href="#products" class="button">Buy now</a>
              </section>  
         </header>
-        <!-- Viktor's block end -->
         <main>
             <h2 id="products">Products</h2>
             <div class="product-list">
@@ -39,8 +35,8 @@
                     <h3>Baby Yoda</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo voluptatem aliquam provident odio ducimus error soluta tempora vero sint? Ipsa ipsum veniam, minus unde nihil incidunt cum corrupti. Ad.</p>
                     <div class="buttons">
-                        <button>Info</button>
-                        <button>Buy</button>
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
                     </div>
                 </article>
                 <article class="product">
@@ -48,8 +44,8 @@
                     <h3>Banana</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo voluptatem aliquam provident odio ducimus error soluta tempora vero sint? Ipsa ipsum veniam, minus unde nihil incidunt cum corrupti. Ad.</p>
                     <div class="buttons">
-                        <button>Info</button>
-                        <button>Buy</button>
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
                     </div>
                 </article>
                 <article class="product">
@@ -57,8 +53,8 @@
                     <h3>Girl</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo voluptatem aliquam provident odio ducimus error soluta tempora vero sint? Ipsa ipsum veniam, minus unde nihil incidunt cum corrupti. Ad.</p>
                     <div class="buttons">
-                        <button>Info</button>
-                        <button>Buy</button>
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
                     </div>
                 </article>
                 <article class="product">
@@ -66,26 +62,24 @@
                     <h3>Viking</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo voluptatem aliquam provident odio ducimus error soluta tempora vero sint? Ipsa ipsum veniam, minus unde nihil incidunt cum corrupti. Ad.</p>
                     <div class="buttons">
-                        <button>Info</button>
-                        <button>Buy</button>
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
                     </div>
                 </article>
             </div>
         </main>
         <footer>
             <h2>Contacts</h2>
-            <form action="????" method="POST">
-                <label>
-                    Your name:
-                    <input type="text" name="user-name" placeholder="Your name" required>
-                </label>
+            <form class="contact-form" action="????" method="POST">
+                <label for="user-name">Your name:</label>
+                <input id="user-name" type="text" name="user-name" placeholder="Your name" required>
                 <br>
-                <label>
+                <label for="user-email">
                     Your email:
-                    <input type="email" name="user-email" placeholder="Your email" required>
                 </label>
+                <input id="user-email" type="email" name="user-email" placeholder="Your email" required>
                 <br>
-                <input type="submit">                
+                <input class="button card-button" type="submit">                
             </form>
             <p>Some contacts info...</p>
         </footer>
